@@ -1,6 +1,5 @@
-from cs50 import get_string
 
-s = get_string("Text :")
+s = input("Text :")
 num_letters, num_words, num_sentences = 0, 0, 0
 
 for i in range(len(s)):
@@ -9,7 +8,7 @@ for i in range(len(s)):
         num_letters += 1
     if s[i] == '.' or s[i] == '?' or s[i] == '!':
         num_sentences += 1
-        
+
 print(num_words)
 print(num_letters)
 print(num_sentences)
@@ -26,4 +25,3 @@ else:
     print(index)
     index = round(index)
     print("Grade ", index)
-    
